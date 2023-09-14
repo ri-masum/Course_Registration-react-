@@ -4,35 +4,35 @@
       "name": "Web Development Fundamentals",
       "details": "Learn the basics of web development with HTML, CSS, and JavaScript.",
       "price": 3000,
-      "credit": 6
+      "credit": 3
     },
     {
       "picture": "https://i.ibb.co/4mV0VD3/Rectangle-2-2.png",
-      "name": "Python Programming for Beginners",
-      "details": "A beginner-friendly Python course for aspiring programmers.",
+      "name": "C++ Programming for Beginners",
+      "details": "A beginner-friendly C++ course for aspiring programmers.",
       "price": 2200,
       "credit": 4
     },
     {
       "picture": "https://i.ibb.co/kqHQC2f/Rectangle-2-3.png",
-      "name": "Data Science with R",
-      "details": "Explore data analysis and visualization using the R programming language.",
+      "name": "Learn Algorithm",
+      "details": "Explore data analysis and visualization using the algorithm programming language.",
       "price": 3500,
       "credit": 7
     },
     {
       "picture": "https://i.ibb.co/RH7yLYy/Rectangle-2-4.png",
-      "name": "Java Application Development",
-      "details": "Build Java applications from scratch with hands-on projects.",
+      "name": "C++ Application Development",
+      "details": "Build C++ applications from scratch with hands-on projects.",
       "price": 2700,
       "credit": 5
     },
     {
       "picture": "https://i.ibb.co/ZY9y0mB/Rectangle-2-5.png",
-      "name": "Mobile App Development with React Native",
+      "name": "Mobile App Dev with React Native",
       "details": "Create cross-platform mobile apps using React Native framework.",
       "price": 2800,
-      "credit": 6
+      "credit": 1
     },
     {
       "picture": "https://i.ibb.co/y5np343/Rectangle-2-6.png",
@@ -43,15 +43,15 @@
     },
     {
       "picture": "https://i.ibb.co/MkHcpmM/Rectangle-2.png",
-      "name": "Front-End Web Design",
-      "details": "Design and develop responsive websites with HTML, CSS, and JavaScript.",
+      "name": "Python learning",
+      "details": "A beginner-friendly Python course for aspiring programmers..",
       "price": 2300,
-      "credit": 5
+      "credit": 2
     },
     {
       "picture": "https://i.ibb.co/3YRjMh0/Rectangle-3-1.png",
-      "name": "Database Management with SQL",
-      "details": "Master SQL for efficient database management and querying.",
+      "name": "Database Management with AWS",
+      "details": "Master AWS for efficient database management and querying.",
       "price": 2900,
       "credit": 6
     },
