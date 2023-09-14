@@ -6,7 +6,9 @@ const Home = () => {
   const [courses, setCourses] = useState([]);
   const [names,setNames]=useState([])
   const [credts,setCredits]=useState(0)
-  const [remaining,setRemaining]=useState(0)
+  const [remaining,setRemaining]=useState(20)
+  const [totalPrice,setTotalPrice]=useState(0)
+
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -18,8 +20,11 @@ const Home = () => {
 
     const newNames=[...names,name]
 
+
+
     const isExist=names.find(item=>item.credit ===name.credit)
     let count=name.credit;
+    let price=name.price
     if(isExist){
         return alert('eita already add ace')
 
@@ -31,6 +36,9 @@ const Home = () => {
             count=count+item.credit;
         })
         // console.log(count);
+        names.forEach(item=>{
+            price=price+item.price
+        })
 
         const totalRemaining=20-count;
         if(count>20){
@@ -38,9 +46,13 @@ const Home = () => {
         }
 
         else{
+
+
             setRemaining(totalRemaining)
             setCredits(count)
             setNames(newNames)
+            setTotalPrice(price)
+
           }
 
         }
@@ -52,7 +64,7 @@ const Home = () => {
   return (
     <div>
        <div className="flex gap-5"> 
-       <div className="flex flex-wrap gap-4  bg-red-100 w-4/5">
+       <div className="flex flex-wrap gap-4  w-4/5">
        {
             courses.map((course,idx)=><Cards course={course} key={idx} 
             courses={courses}
@@ -64,6 +76,8 @@ const Home = () => {
         <Cart names={names}
         credts={credts}
         remaining={remaining}
+        totalPrice={totalPrice}
+
         ></Cart>
        </div>
 
