@@ -1,4 +1,4 @@
-const Cart = ({ names,credts }) => {
+const Cart = ({ names,credts,remaining }) => {
   console.log(names);
 
   return (
@@ -6,7 +6,7 @@ const Cart = ({ names,credts }) => {
       <div className="bg-gray-200 w-auto space-y-3">
        
        <h1 className="text-sky-500 font-semibold">
-          Credit Hour Remaining hr={names.length}
+          Credit Hour Remaining {remaining} hr
         </h1>
        
         

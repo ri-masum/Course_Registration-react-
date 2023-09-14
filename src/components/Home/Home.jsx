@@ -6,6 +6,7 @@ const Home = () => {
   const [courses, setCourses] = useState([]);
   const [names,setNames]=useState([])
   const [credts,setCredits]=useState(0)
+  const [remaining,setRemaining]=useState(0)
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -37,6 +38,7 @@ const Home = () => {
         }
 
         else{
+            setRemaining(totalRemaining)
             setCredits(count)
             setNames(newNames)
           }
@@ -61,6 +63,7 @@ const Home = () => {
 
         <Cart names={names}
         credts={credts}
+        remaining={remaining}
         ></Cart>
        </div>
 
