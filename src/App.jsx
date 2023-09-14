@@ -1,6 +1,7 @@
 
 import './App.css'
 import Home from './components/Home/Home'
+import  { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
 
     
     <Home></Home>   
+    <Toaster position='top-right'/>
 
     </>
   )

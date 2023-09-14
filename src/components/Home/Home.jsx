@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Cards from "../Cards/Cards";
 import Cart from "../Cart/Cart";
+import toast from 'react-hot-toast';
+
 
 const Home = () => {
   const [courses, setCourses] = useState([]);
@@ -26,7 +28,7 @@ const Home = () => {
     let count=name.credit;
     let price=name.price
     if(isExist){
-        return alert('eita already add ace')
+         toast.error('This one is Already Exist')
 
     }
 
@@ -42,7 +44,7 @@ const Home = () => {
 
         const totalRemaining=20-count;
         if(count>20){
-            alert ('credit limit is 20')
+            toast.error ("You Can't add more than 20")
         }
 
         else{

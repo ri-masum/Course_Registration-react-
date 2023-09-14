@@ -14,7 +14,9 @@ const Cart = ({ names, credts, remaining,totalPrice }) => {
           <div className=" p-2">
             {names.map((name, idx) => (
               <small key={idx} className="text-start">
-                <li>{name.name}</li>
+               <ol>
+               <li>{name.name}</li>
+               </ol>
               </small>
             ))}
           </div>
