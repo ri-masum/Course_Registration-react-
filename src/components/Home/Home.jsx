@@ -30,11 +30,19 @@ const Home = () => {
             count=count+item.credit;
         })
         // console.log(count);
-        
 
-        setCredits(count)
-    setNames(newNames)
-  }
+        const totalRemaining=20-count;
+        if(count>20){
+            alert ('credit limit is 20')
+        }
+
+        else{
+            setCredits(count)
+            setNames(newNames)
+          }
+
+        }
+     
 
     
 
