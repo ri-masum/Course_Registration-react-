@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 
 const Cart = ({ names, credts, remaining,totalPrice }) => {
+
+  let count=1;
   return (
     <div>
       <div className="bg-gray-200 p-4 rounded-lg w-auto space-y-3">
@@ -12,13 +14,19 @@ const Cart = ({ names, credts, remaining,totalPrice }) => {
           <h1 className="text-black font-semibold">Course Name</h1>
 
           <div className=" p-2">
+            
             {names.map((name, idx) => (
+              
+
               <small key={idx} className="text-start">
                <ol>
-               <li>{name.name}</li>
+               <li>{count++}. {name.name}</li>
+               
                </ol>
               </small>
+              
             ))}
+            
           </div>
         </div>
 
