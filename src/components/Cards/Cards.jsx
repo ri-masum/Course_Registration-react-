@@ -7,7 +7,7 @@ const Cards = ({ course,handleBtn }) => {
   //   const { picture, name, details, price, credit } = course;
   return (
     <div>
-      <div className="card w-[300px] h-[420px] bg-base-100 shadow-2xl space-y-5">
+      <div className="card w-[300px] h-[420px] bg-base-100 shadow-2xl space-y-5 relative">
         
           <img src={picture} alt="Course" className="" />
         
@@ -23,7 +23,7 @@ const Cards = ({ course,handleBtn }) => {
             </div>
           </div>
 
-          <button className="btn btn-accent w-full mt-5" onClick={()=>handleBtn(course)}>Select</button>
+          <button className="btn btn-accent  w-9/12 absolute bottom-0  " onClick={()=>handleBtn(course)}>Select</button>
         </div>
       </div>
     </div>
